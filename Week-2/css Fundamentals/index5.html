@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Product Rating</title>
+   
+      <style>
+         body {
+            font-family: Calibri, Myriad;
+         }
+   
+         div {
+            margin-bottom: 5px;
+         }
+   
+         /* Your solution goes here */
+
+         h1{
+            font-weight: bold;
+         }
+   
+         span{
+            color: red;
+         }
+
+         .inp,textarea{
+            width: 300px;
+            padding: 10px;
+         }
+
+
+         .inp{
+            background-color: #DBF1F3;
+            border-left: 1px solid;
+            border-top: 1px solid;
+            border-right: 0px ;
+            border-bottom: 0px ;
+         }
+   
+
+         label{
+            width: 120px;
+            display: inline-block;
+
+         }
+
+
+         #submit{
+            padding: 12px;
+         }
+
+
+         .required:after { content:"*";color: red;display: inline; }
+
+      </style>
+   </head>
+   <body>
+      <h1>Rate a Product</h1>
+      <p><span class="required"></span> indicates required field.</p>
+      <form>
+         <div>
+            <label class="required">Product </label>
+            <input class="inp" type="text" name="title">
+         </div>
+         <div>
+            <label class="required">Purchase Date </label>
+            <input class="inp" type="date" name="purchase-date">
+         </div>
+         <div>
+            <label class="required">Rating </label>
+            <input class="inp" type="number" name="rating" value="4" min="1" max="4">
+         </div> 
+         <div> 
+            <label>Comments</label>      
+            <textarea rows="3" cols="50" name="comments"></textarea> 
+         </div>
+         <input type="submit" value="Submit Rating" id="submit">
+      </form>
+   </body>
+</html>
