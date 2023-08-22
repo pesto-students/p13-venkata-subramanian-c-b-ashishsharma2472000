@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+       form{
+        display: grid;
+    width: fit-content;
+    line-height: 42px;
+    margin: auto;
+       }
+
+       label{
+        font-weight: bold;
+        font-size: large;
+        
+        
+       }
+
+       main{
+        margin: auto;
+        display: flex;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <!-- form -->
+
+    <div id="main">
+
+            <form method="post" enctype="multipart/form-data">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Full name" required id="fullname" name="fullname">
+
+            <label>Email </label>
+            <input type="email" placeholder="email" required id="email" name="email">
+
+            <label>About </label>
+            <textarea rows="3" cols="50" name="about" id="about" placeholder="about"></textarea>
+
+            <label>Picture</label>
+            <input type="file" placeholder="enter you image"  name="Picture" id="Picture">
+
+            <br>
+            <input type="submit" value="submit" >
+
+
+            </form>
+            
+    </div>
+
+
+   
+
+
+
+</body>
+</html>
